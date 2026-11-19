@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio - Suci Nurul Hidhayah</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 10%;
+            background: #111c35;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            max-width: 650px;
+            line-height: 1.8;
+            color: #cbd5e1;
+        }
+
+        .button {
+            margin-top: 25px;
+            padding: 13px 28px;
+            background: #0284c7;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #0369a1;
+        }
+
+        .about {
+            padding: 70px 10%;
+            text-align: center;
+            background: #1e293b;
+        }
+
+        .about h2,
+        .skills h2,
+        .contact h2 {
+            color: #38bdf8;
+            margin-bottom: 25px;
+        }
+
+        .about p {
+            line-height: 1.8;
+            color: #cbd5e1;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .skills {
+            padding: 70px 10%;
+            text-align: center;
+        }
+
+        .skill-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill-list div {
+            background: #1e293b;
+            padding: 20px 30px;
+            border-radius: 10px;
+            border: 1px solid #334155;
+        }
+
+        .contact {
+            padding: 70px 10%;
+            text-align: center;
+            background: #1e293b;
+        }
+
+        .contact p {
+            color: #cbd5e1;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111c35;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            nav {
+                padding: 20px 5%;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            nav a {
+                margin-left: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2>SuciPortfolio</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+
+        <h1>
+            Halo, Saya
+            <span>Suci Nurul Hidhayah</span>
+        </h1>
+
+        <p>
+            Selamat datang di website portfolio saya.
+            Saya adalah mahasiswa yang tertarik mempelajari
+            teknologi informasi, pengembangan website,
+            dan Cloud Computing.
+        </p>
+
+        <a href="#about" class="button">
+            Kenali Saya
+        </a>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <h2>Tentang Saya</h2>
+
+        <p>
+            Perkenalkan, saya Suci Nurul Hidhayah.
+            Saya sedang mempelajari pengembangan website,
+            teknologi informasi, GitHub, Cloud Computing,
+            serta implementasi Continuous Integration dan
+            Continuous Deployment (CI/CD).
+        </p>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+
+        <h2>Keahlian dan Teknologi</h2>
+
+        <div class="skill-list">
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>GitHub</div>
+            <div>Cloud Computing</div>
+            <div>CI/CD</div>
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+            Terima kasih telah mengunjungi website portfolio saya.
+        </p>
+
+        <p>
+            Suci Nurul Hidhayah | Personal Portfolio
+        </p>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Suci Nurul Hidhayah
+        </p>
+
+        <p>
+            Tugas Implementasi CI/CD dan Cloud
+        </p>
+
+    </footer>
+
+</body>
+</html>
