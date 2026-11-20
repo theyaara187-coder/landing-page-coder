@@ -1,0 +1,26 @@
+
+name: CI - Landing Page
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check index.html
+        run: |
+          test -f index.html
+          echo "File index.html ditemukan!"
+
+      - name: CI berhasil
+        run: echo "CI Landing Page berhasil dijalankan!"
